@@ -1,4 +1,4 @@
-class PhpAT71 < Formula
+class DevopenPhpAT71 < Formula
   desc "General-purpose scripting language"
   homepage "https://www.php.net/"
   url "https://www.php.net/distributions/php-7.1.33.tar.xz"
