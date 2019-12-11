@@ -1,8 +1,16 @@
-class PhpAT71 < Formula
+class DevopenPhpAT71 < Formula
   desc "General-purpose scripting language"
   homepage "https://www.php.net/"
   url "https://www.php.net/distributions/php-7.1.33.tar.xz"
   sha256 "bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968"
+  revision 2	
+
+  bottle do	
+    root_url "https://dl.bintray.com/henkrehorst/homebrew-php"	
+    sha256 "5c1af2e2b9cfde3c07b1d6ab3f487e4154cff8b6ddb7a18ca3e2a9acf15cc45d" => :mojave	
+    sha256 "45fedec57641a6224ed471f25c31544327a815af5c5218ea4e6c95830606b4b5" => :high_sierra	
+    sha256 "ddaf8db2ed3fc430dab970a06174bc65032329e1612b6bd49f2fd81bbca747cb" => :sierra	
+  end
 
   keg_only :versioned_formula
 
@@ -24,9 +32,11 @@ class PhpAT71 < Formula
   depends_on "libpq"
   depends_on "libtool"
   depends_on "libzip"
+  depends_on "libyaml"
   depends_on "mcrypt"
   depends_on "openldap"
   depends_on "openssl@1.1"
+  depends_on "pcre"
   depends_on "sqlite"
   depends_on "tidy-html5"
   depends_on "unixodbc"
